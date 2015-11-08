@@ -1,0 +1,16 @@
+public class homework3 {
+
+    private static java.util.Scanner input;
+    public static void main(String[] args) {
+
+        input = new java.util.Scanner(System.in);
+        System.out.println("PLease enter your number");
+        int number = input.nextInt();
+          SumNum(number);
+    }
+
+    private static void SumNum(int number){
+
+        System.out.println(number%1000/100+number%100/10+number%10);
+    }
+}
