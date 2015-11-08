@@ -1,0 +1,27 @@
+public class homework3 {
+
+    private static java.util.Scanner input;
+    public static void main(String[] args) {
+
+        input = new java.util.Scanner(System.in);
+        System.out.println("Введите номер числа Фибоначчи ,которое вам необходимо");
+        int position = input.nextInt();
+        System.out.println("Вваше число");
+        FibNumber(position);
+    }
+    private static void FibNumber(int position){
+        int fibnum1 = 1;
+        int fibnum2 = 1;
+        int i = 2;
+        int fibnum=0;
+        while(i<position){
+            fibnum  = fibnum1 + fibnum2;
+            fibnum1=fibnum2;
+            fibnum2=fibnum;
+            i++;
+
+        }System.out.println(fibnum);
+    }
+
+
+}
