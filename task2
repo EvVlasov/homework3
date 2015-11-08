@@ -1,0 +1,27 @@
+public class homework3 {
+
+    private static java.util.Scanner input;
+    public static void main(String[] args) {
+
+        input = new java.util.Scanner(System.in);
+        System.out.println("Введите координаты левого нижнего угла");
+        int x1 = input.nextInt();
+        int y1 = input.nextInt();
+        System.out.println("Введите координаты правого верхнего угла");
+        int x2 = input.nextInt();
+        int y2 = input.nextInt();
+        System.out.println("Введите координаты точки");
+        int px = input.nextInt();
+        int py = input.nextInt();
+       PointPosition(x1,y1,x2,y2,px,py);
+    }
+
+    private static void PointPosition(int x1,int y1,int x2,int y2,int px,int py){
+
+        if(px>=x1 && px<=x2 && py>=y1 && py<=y2)
+        {
+            System.out.println("Точка принадлежит прямоугольнику");
+
+        } else System.out.println("Точка не принадлежит прямоугольнику");
+    }
+}
